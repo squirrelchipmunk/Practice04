@@ -24,13 +24,13 @@ public class Ex07 {
 		int amount = sc.nextInt(); // 액수
 		int count; // 지폐&동전 개수
 		
-		while(amount>0) {
-			for(int i=0; i<wonArray.length;i++) {
-					count = amount / wonArray[i];
-					System.out.println(wonArray[i]+"원: "+count+"개");
-					amount %= wonArray[i];	
-			}
+		
+		for(int i=0; i<wonArray.length;i++) {
+				count = amount / wonArray[i];
+				System.out.println(wonArray[i]+"원: "+count+"개");
+				amount %= wonArray[i];	
 		}
+	
 		
 		
 		sc.close();
