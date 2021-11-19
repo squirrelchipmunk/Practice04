@@ -26,14 +26,9 @@ public class Ex07 {
 		
 		while(amount>0) {
 			for(int i=0; i<wonArray.length;i++) {
-				if( (amount/wonArray[i]) > 0) {
 					count = amount / wonArray[i];
 					System.out.println(wonArray[i]+"원: "+count+"개");
 					amount %= wonArray[i];	
-				}
-				else {
-					System.out.println(wonArray[i]+"원: 0개");
-				}
 			}
 		}
 		
