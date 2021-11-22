@@ -8,10 +8,6 @@ public class Ex06 {
 		
 		for(int i=0; i<c.length;i++) {
 			System.out.print(c[i]);
-		}
-		
-		
-		for(int i=0; i<c.length;i++) {
 			if(c[i]==' ')
 				c[i] = ',';
 		}
